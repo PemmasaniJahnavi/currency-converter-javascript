@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+  <meta name="description" content="A online Currency converter in HTML5, CSS3 and Javascript." />
+  <!-- add icon link -->
+  <link rel = "icon" href="image-removebg-preview.png"
+  type = "png">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Currency Converter</title> 
+<link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> 
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"> </script> 
+<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script> 
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href= "https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap" rel="stylesheet"> 
+    <!-- linking style.css file-->
+<link rel="stylesheet" href="style.css"> 
+</head> 
+
+<body> <!-- Currency Converter  -->
+<h1 class="heading text-center display-2"> Currency Converter</h1> 
+<hr> 
+<div class="container"> 
+    <div class="main">  
+            <div class="form-group"> 
+                <label for="oamount"> Amount to Convert :  </label> 
+                <input type="text" 
+                       class="form-control searchBox" 
+                       placeholder="0.00" 
+                       id="oamount"> 
+            </div> 
+            <div class="row"> 
+                <div class="col-sm-6"> 
+                    <div class="input-group mb-3"> 
+                        <div class="input-group-prepend"> 
+                            <span class="input-group-text">From</span> 
+                        </div> 
+                       <select class="form-control from" id="sel1"> 
+                            <option value="">Select One …</option> 
+                            <option value="USD">USD-America</option> 
+                            <option value="AED">AED-Arab Emirates</option> 
+                            <option value="ARS">ARS-Argentina</option> 
+                            <option value="AUD">AUD-Australia</option> 
+                            <option value="BGN">BGN-Bulgaria</option> 
+                            <option value="BRL">BRL-Brazil</option> 
+                            <option value="BSD">BSD-Bahamas</option> 
+                            <option value="CAD">CAD-Canada</option> 
+                            <option value="CHF">CHF-Swizerland</option> 
+                            <option value="CLP">CLP-Chile</option> 
+                            <option value="CNY">CNY-China</option> 
+                            <option value="COP">COP-Colombia</option> 
+                            <option value="CZK">CZK-Czechia</option> 
+                            <option value="DKK">DKK-Denmark</option> 
+                            <option value="DOP">DOP-Dominican</option> 
+                            <option value="EGP">EGP-Egypt</option> 
+                            <option value="EUR">EUR-Germany</option> 
+                            <option value="FJD">FJD-Fiji</option> 
+                            <option value="GBP">GBP-UK</option> 
+                            <option value="GTQ">GTQ-Guatemala</option> 
+                            <option value="HKD">HKD-HongKong</option> 
+                            <option value="HRK">HRK-Croatia</option> 
+                            <option value="HUF">HUF-Hungary</option> 
+                            <option value="IDR">IDR-Indonesia</option> 
+                            <option value="ILS">ILS-Israel</option> 
+                            <option value="INR">INR-India</option> 
+                            <option value="ISK">ISK-Iceland</option> 
+                            <option value="JPY">JPY-Japan</option> 
+                            <option value="KRW">KRW-SouthKorea</option> 
+                            <option value="KZT">KZT-Kazakhstan</option> 
+                            <option value="MVR">MVR-Maldives</option> 
+                            <option value="MXN">MXN-Mexico</option> 
+                            <option value="MYR">MYR-Malaysia</option> 
+                            <option value="NOK">NOK-Norway</option> 
+                            <option value="NZD">NZD-NewZealand</option> 
+                            <option value="PAB">PAB-Panama</option>
+                            <option value="PEN">PEN-Peru</option> 
+                            <option value="PHP">PHP-Philippines</option> 
+                            <option value="PKR">PKR-Pakistan</option> 
+                            <option value="PLN">PLN-Poland</option> 
+                            <option value="PYG">PYG-Paraguay</option> 
+                            <option value="RON">RON-Romania</option> 
+                            <option value="RUB">RUB-Russia</option> 
+                            <option value="SAR">SAR-SaudiArabia</option> 
+                            <option value="SEK">SEK-Sweden</option> 
+                            <option value="SGD">SGD-Singapore</option> 
+                            <option value="THB">THB-Thailand</option> 
+                            <option value="TRY">TRY-Turkey</option> 
+                            <option value="TWD">TWD-Taiwan</option> 
+                            <option value="UAH">UAH-Ukraine</option> 
+                            <option value="UYU">UYU-Uruguay</option> 
+                            <option value="ZAR">ZAR-SouthAfrica</option> 
+                        </select> 
+                    </div> 
+                </div> 
+                <div class="col-sm-6"> 
+                    <div class="input-group mb-3"> 
+                        <div class="input-group-prepend"> 
+                            <span class="input-group-text">To</span> 
+                        </div> 
+                        <select class="form-control to" id="sel2"> 
+                            <option value="">Select One …</option> 
+                            <option value="USD">USD-America</option> 
+                            <option value="AED">AED-Arab Emirates</option> 
+                            <option value="ARS">ARS-Argentina</option> 
+                            <option value="AUD">AUD-Australia</option> 
+                            <option value="BGN">BGN-Bulgaria</option> 
+                            <option value="BRL">BRL-Brazil</option> 
+                            <option value="BSD">BSD-Bahamas</option> 
+                            <option value="CAD">CAD-Canada</option> 
+                            <option value="CHF">CHF-Swizerland</option> 
+                            <option value="CLP">CLP-Chile</option> 
+                            <option value="CNY">CNY-China</option> 
+                            <option value="COP">COP-Colombia</option> 
+                            <option value="CZK">CZK-Czechia</option> 
+                            <option value="DKK">DKK-Denmark</option> 
+                            <option value="DOP">DOP-Dominican</option> 
+                            <option value="EGP">EGP-Egypt</option> 
+                            <option value="EUR">EUR-Germany</option> 
+                            <option value="FJD">FJD-Fiji</option> 
+                            <option value="GBP">GBP-UK</option> 
+                            <option value="GTQ">GTQ-Guatemala</option> 
+                            <option value="HKD">HKD-HongKong</option> 
+                            <option value="HRK">HRK-Croatia</option> 
+                            <option value="HUF">HUF-Hungary</option> 
+                            <option value="IDR">IDR-Indonesia</option> 
+                            <option value="ILS">ILS-Israel</option> 
+                            <option value="INR">INR-India</option> 
+                            <option value="ISK">ISK-Iceland</option> 
+                            <option value="JPY">JPY-Japan</option> 
+                            <option value="KRW">KRW-SouthKorea</option> 
+                            <option value="KZT">KZT-Kazakhstan</option> 
+                            <option value="MVR">MVR-Maldives</option> 
+                            <option value="MXN">MXN-Mexico</option> 
+                            <option value="MYR">MYR-Malaysia</option> 
+                            <option value="NOK">NOK-Norway</option> 
+                            <option value="NZD">NZD-NewZealand</option> 
+                            <option value="PAB">PAB-Panama</option> 
+                            <option value="PEN">PEN-Peru</option> 
+                            <option value="PHP">PHP-Philippines</option> 
+                            <option value="PKR">PKR-Pakistan</option> 
+                            <option value="PLN">PLN-Poland</option> 
+                            <option value="PYG">PYG-Paraguay</option> 
+                            <option value="RON">RON-Romania</option> 
+                            <option value="RUB">RUB-Russia</option> 
+                            <option value="SAR">SAR-SaudiArabia</option> 
+                            <option value="SEK">SEK-Sweden</option> 
+                            <option value="SGD">SGD-Singapore</option> 
+                            <option value="THB">THB-Thailand</option> 
+                            <option value="TRY">TRY-Turkey</option> 
+                            <option value="TWD">TWD-Taiwan</option> 
+                            <option value="UAH">UAH-Ukraine</option> 
+                            <option value="UYU">UYU-Uruguay</option> 
+                            <option value="ZAR">ZAR-SouthAfrica</option> 
+                        </select> 
+                    </div> 
+                </div> 
+            </div> 
+           <div class="text-center"> 
+<!-- convert button -->
+ <button class="btn btn-primary convert m-2" type="submit"> Convert </button> 
+<!-- reset button -->
+<button class="btn btn-primary m-2" onclick="clearVal()"> Reset </button> </div> 
+</div> 
+<div id="finalAmount" class="text-center"> 
+<!-- Display the converted amount -->
+<h2>Converted Amount : 
+    <span class="finalValue" style="color:rgb(0, 0, 0);"> </span> 
+</h2> 
+</div> 
+    </div> 
+<!-- linking script.js file -->
+<script src="script.js"></script> 
+</body> 
+</html>
+<!-- partial -->
+<script  src="./script.js"></script>
+
+</body>
+</html>
