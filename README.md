@@ -1,2 +1,2 @@
 OUTPUT
-[currency-con javascript.txt](https://github.com/PemmasaniJahnavi/currency-converter-javascript/files/13949711/currency-con.javascript.txt)
+https://github.com/PemmasaniJahnavi/currency-converter-javascript/assets/155504574/6cf7967d-d744-4dc7-8ac0-4f86917d5e53
